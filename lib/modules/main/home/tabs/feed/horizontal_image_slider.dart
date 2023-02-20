@@ -64,17 +64,19 @@ class _HorizontalImageSliderState extends State<HorizontalImageSlider> {
                               ),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
-                                image: const DecorationImage(
+                                image: DecorationImage(
                                   image: NetworkImage(
-                                      // TODO: image data 처리!
-                                      'https://s3.ap-northeast-2.amazonaws.com/com.liveschole/course/1676439475609.png.medium'
-                                      // snapshot.data![index].imageUrl,
-                                      ),
+                                    // TODO: image data 처리!
+                                    // 'https://s3.ap-northeast-2.amazonaws.com/com.liveschole/course/1676439475609.png.medium'
+                                    // 'https://s3.ap-northeast-2.amazonaws.com/com.liveschole/course/1676635281756.png.medium',
+                                    '${snapshot.data![index].imageUrl}.medium',
+                                  ),
                                   fit: BoxFit.cover,
                                 ),
                               ),
                               padding: const EdgeInsets.all(16),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
                                   Text(
@@ -88,8 +90,9 @@ class _HorizontalImageSliderState extends State<HorizontalImageSlider> {
                                   Row(
                                     children: [
                                       Text(
-                                        '완독 ${snapshot.data![index].price}분 소요',
+                                        '조회수 ${snapshot.data![index].price}',
                                         style: TextStyle(
+                                          height: 1.2,
                                           color: Colors.white.withOpacity(0.8),
                                           fontWeight: FontWeight.w700,
                                         ),
@@ -102,6 +105,7 @@ class _HorizontalImageSliderState extends State<HorizontalImageSlider> {
                                             DateFormat(format).parse(snapshot
                                                 .data![index].createdAt)),
                                         style: TextStyle(
+                                          height: 1.2,
                                           color: Colors.white.withOpacity(0.8),
                                           fontWeight: FontWeight.w700,
                                         ),

@@ -11,11 +11,11 @@ class SignupFormScreen extends StatelessWidget {
   final TextEditingController _passwordController = TextEditingController();
 
   void _onTapNextButton(BuildContext context) {
-    Navigator.pushNamed(context, '/signup_verify');
+    Navigator.pushReplacementNamed(context, '/signup_verify');
   }
 
   void _onTapLoginButton(BuildContext context) {
-    Navigator.pushNamed(context, '/login');
+    Navigator.pushReplacementNamed(context, '/login');
   }
 
   @override
@@ -98,7 +98,7 @@ class SignupFormScreen extends StatelessWidget {
                   onTap: () => _onTapLoginButton(context),
                   child: const Text(
                     '로그인',
-                    style: TextStyle(color: Color(0XFF8860DE)),
+                    style: TextStyle(color: Color(0xFFFFB951)),
                   ),
                 )
               ],

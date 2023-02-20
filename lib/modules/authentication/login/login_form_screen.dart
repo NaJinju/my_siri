@@ -10,11 +10,11 @@ class LoginFormScreen extends StatelessWidget {
 
   void _onTapLoginButton(BuildContext context) {
     // print(_idController.value.text);
-    Navigator.pushNamed(context, '/main');
+    Navigator.pushReplacementNamed(context, '/main');
   }
 
   void _onTapSignupButton(BuildContext context) {
-    Navigator.pushNamed(context, '/signup');
+    Navigator.pushReplacementNamed(context, '/signup');
   }
 
   @override
@@ -89,7 +89,7 @@ class LoginFormScreen extends StatelessWidget {
                   onTap: () => _onTapSignupButton(context),
                   child: const Text(
                     '회원가입',
-                    style: TextStyle(color: Color(0XFF8860DE)),
+                    style: TextStyle(color: Color(0xFFFFB951)),
                   ),
                 )
               ],

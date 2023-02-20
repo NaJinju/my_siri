@@ -28,7 +28,7 @@ class AuthButton extends StatelessWidget {
             color: const Color(0XFF18181C).withOpacity(0.16),
           ),
           borderRadius: BorderRadius.circular(8),
-          color: const Color(0XFF8860DE),
+          color: const Color(0xFFFFB951),
         ),
         child: Center(
           child: Text(
@@ -58,9 +58,9 @@ class AuthSocialButton extends StatelessWidget {
 
   void _onTapEmailLogin(BuildContext context) {
     if (screenType == AuthButtonScreenType.login) {
-      Navigator.pushNamed(context, '/login_form');
+      Navigator.pushReplacementNamed(context, '/login_form');
     } else {
-      Navigator.pushNamed(context, '/signup_form');
+      Navigator.pushReplacementNamed(context, '/signup_form');
     }
   }
 

@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
           title: const Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              '유목민의 시그널 리포트',
+              'My Cat',
               style: TextStyle(
                 fontWeight: FontWeight.w700,
               ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_siri/modules/main/home/tabs/feed/getx_horizontal_image_slider.dart';
+import 'package:my_siri/modules/main/home/tabs/feed/horizontal_image_slider.dart';
 import 'package:my_siri/modules/main/home/tabs/feed/vertical_feed_list.dart';
 import 'package:my_siri/shared/enum/widget_enum.dart';
 import 'package:my_siri/shared/widgets/custom_select_box.dart';
@@ -27,8 +27,8 @@ class FeedTab extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          GetxHorizontalImageSlider(),
-          // const HorizontalImageSlider(),
+          // GetxHorizontalImageSlider(),
+          const HorizontalImageSlider(),
           const SizedBox(
             height: 20,
           ),

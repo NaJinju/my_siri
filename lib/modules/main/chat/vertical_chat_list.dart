@@ -5,7 +5,7 @@ class VerticalChatList extends StatelessWidget {
   final List<Map<String, dynamic>> data;
 
   void _moveToChatRoom(BuildContext context) {
-    Navigator.pushNamed(context, '/chatroom');
+    Navigator.pushReplacementNamed(context, '/chatroom');
   }
 
   @override

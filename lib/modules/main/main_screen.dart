@@ -29,7 +29,7 @@ class _MainScreenState extends State<MainScreen> {
       child: Scaffold(
         backgroundColor: Colors.white,
         floatingActionButton: FloatingActionButton(
-          backgroundColor: const Color(0XFF7357F5),
+          backgroundColor: const Color(0xFFFFB951),
           onPressed: () => _onTapNavigationTab(2),
           tooltip: 'Create',
           child: const Icon(Icons.flag_rounded),

@@ -11,7 +11,7 @@ class ApiService {
   static const String verson3 = 'v3.0';
 
   static const String courseUrl =
-      '$baseUrl/$verson3/channels/$channelSeq/courses?q=%EC%8B%9C%EB%A6%AC';
+      '$baseUrl/$verson3/channels/$channelSeq/courses?q=%EB%A7%88%EC%9D%B4%EC%BA%A3';
   static const String postUrl =
       '$baseUrl/$verson1/channels/$channelSeq/boards/$boardSeq/posts';
 

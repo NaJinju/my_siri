@@ -8,7 +8,7 @@ class SignupVerifyScreen extends StatelessWidget {
   final TextEditingController _verifyNumberController = TextEditingController();
 
   void _onTapNextButton(BuildContext context) {
-    Navigator.pushNamed(context, '/signup_detail_form');
+    Navigator.pushReplacementNamed(context, '/signup_detail_form');
   }
 
   @override
@@ -56,7 +56,7 @@ class SignupVerifyScreen extends StatelessWidget {
                 Text(
                   'sr.kim@naver.com',
                   style: TextStyle(
-                    color: Color(0XFF8860DE),
+                    color: Color(0xFFFFB951),
                   ),
                 ),
                 Text('으로 전송된 4자리 번호를 입력하세요.'),

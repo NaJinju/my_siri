@@ -7,7 +7,7 @@ class LoginTypeScreen extends StatelessWidget {
   const LoginTypeScreen({super.key});
 
   void _onTapSignupButton(BuildContext context) {
-    Navigator.pushNamed(context, '/signup');
+    Navigator.pushReplacementNamed(context, '/signup');
   }
 
   @override
@@ -71,7 +71,7 @@ class LoginTypeScreen extends StatelessWidget {
                   onTap: () => _onTapSignupButton(context),
                   child: const Text(
                     '회원가입',
-                    style: TextStyle(color: Color(0XFF8860DE)),
+                    style: TextStyle(color: Color(0xFFFFB951)),
                   ),
                 )
               ],

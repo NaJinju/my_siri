@@ -12,7 +12,7 @@ class SignupDetailFormScreen extends StatelessWidget {
   final TextEditingController _phoneNumberController = TextEditingController();
 
   void _onTapComplete(BuildContext context) {
-    Navigator.pushNamed(context, '/main');
+    Navigator.pushReplacementNamed(context, '/main');
   }
 
   @override
@@ -91,7 +91,7 @@ class SignupDetailFormScreen extends StatelessWidget {
               Row(
                 children: [
                   Checkbox(
-                    activeColor: const Color(0XFF8860DE),
+                    activeColor: const Color(0xFFFFB951),
                     value: checkboxValue,
                     onChanged: (newValue) {
                       print(newValue);
@@ -107,7 +107,7 @@ class SignupDetailFormScreen extends StatelessWidget {
               Row(
                 children: [
                   Checkbox(
-                    activeColor: const Color(0XFF8860DE),
+                    activeColor: const Color(0xFFFFB951),
                     value: checkboxValue,
                     onChanged: (newValue) {
                       print(newValue);
@@ -130,7 +130,7 @@ class SignupDetailFormScreen extends StatelessWidget {
         child: GestureDetector(
           onTap: () => _onTapComplete(context),
           child: Container(
-            color: const Color(0XFF8860DE),
+            color: const Color(0xFFFFB951),
             height: 52,
             child: const Center(
               child: Text(

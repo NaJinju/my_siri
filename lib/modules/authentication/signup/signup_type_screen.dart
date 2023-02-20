@@ -8,7 +8,7 @@ class SignupTypeScreen extends StatelessWidget {
   bool checkboxValue = true;
 
   void _onTapLoginButton(BuildContext context) {
-    Navigator.pushNamed(context, '/login');
+    Navigator.pushReplacementNamed(context, '/login');
   }
 
   @override
@@ -45,7 +45,7 @@ class SignupTypeScreen extends StatelessWidget {
             Row(
               children: [
                 Checkbox(
-                  activeColor: const Color(0XFF8860DE),
+                  activeColor: const Color(0xFFFFB951),
                   value: checkboxValue,
                   onChanged: (newValue) {
                     print(newValue);
@@ -89,7 +89,7 @@ class SignupTypeScreen extends StatelessWidget {
                   onTap: () => _onTapLoginButton(context),
                   child: const Text(
                     '로그인',
-                    style: TextStyle(color: Color(0XFF8860DE)),
+                    style: TextStyle(color: Color(0xFFFFB951)),
                   ),
                 )
               ],

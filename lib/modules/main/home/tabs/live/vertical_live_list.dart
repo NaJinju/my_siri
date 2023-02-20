@@ -46,7 +46,7 @@ class VerticalLiveList extends StatelessWidget {
         return Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
-            color: item['isNowLive'] ? const Color(0XFF7357F5) : Colors.white,
+            color: item['isNowLive'] ? const Color(0xFFFFB951) : Colors.white,
           ),
           padding: const EdgeInsets.only(
             top: 20,
@@ -138,7 +138,7 @@ class VerticalLiveList extends StatelessWidget {
                           item['isNowLive'] ? '입장하기' : '다시 보기',
                           style: TextStyle(
                             color: item['isNowLive']
-                                ? const Color(0XFF7357F5)
+                                ? const Color(0xFFFFB951)
                                 : const Color(0XFF9E77ED),
                             fontWeight: FontWeight.w700,
                           ),

@@ -2,7 +2,7 @@ class SampleChatRoomData {
   static const List<Map<String, dynamic>> data1 = [
     {
       'id': 1,
-      'userName': '유목민의 시그널 리포트',
+      'userName': 'My Cat',
       'imageUrl':
           'https://s3.ap-northeast-2.amazonaws.com/com.liveschole/common/1675941962128.png',
       'content':
@@ -14,7 +14,7 @@ class SampleChatRoomData {
     },
     {
       'id': 2,
-      'userName': '유목민의 시그널 리포트',
+      'userName': 'My Cat',
       'imageUrl':
           'https://s3.ap-northeast-2.amazonaws.com/com.liveschole/common/1675941962128.png',
       'content': '한수원, 폴란드 원전 수출 5부 능선 넘었다.. 기본 계획 제출',
@@ -58,7 +58,7 @@ class SampleChatRoomData {
     },
     {
       'id': 6,
-      'userName': '유목민의 시그널 리포트',
+      'userName': 'My Cat',
       'imageUrl':
           'https://s3.ap-northeast-2.amazonaws.com/com.liveschole/common/1675941962128.png',
       'content':
